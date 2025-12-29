@@ -7,7 +7,7 @@ just a random collection of observations, but should still be useful for anyone
 wishing to understand more about how the chip produces sound.
 
 The details given below are correct for the CTX3000 keyboard. Everything should
-be identical for the CTX5000, while other keyboards (such as the CTX700) will be
+be identical on the CTX5000, while other keyboards (such as the CTX700) will be
 similar but might differ, for example, in number of parameter sets.
 
 ## More Information
@@ -23,6 +23,7 @@ For other details of the parameters set, especially Tones, see:
 Tools for editing Tone parameter sets:
 
 [Tone Tyrant for Casio](https://github.com/michgz/tonetyrant)
+
 [Tone Mutant](https://github.com/Barsik-Barbosik/Tone-Mutant)
 
 
@@ -139,7 +140,7 @@ The following arrangements are used:
   
 The types of wavetable supported are:
 
-| Parameters 1 & 21 | Type      |
+| Parameter values 1 & 21 | Type      |
 | ----------------- | --------- |
 | 0                 | Melody    |
 | 6                 | Versatile |
@@ -153,7 +154,7 @@ The types of wavetable supported are:
 ## Appendix A - Explanation of memory types
 
 Parameter sets can be selected based on memory as well as category. The memory
-types used by Casio are:
+types made available by Casio are:
 
 | Memory type | Location | Used for |
 | --- | --- | --- |
@@ -161,4 +162,4 @@ types used by Casio are:
 | 1   | Non-volatile memory | User data   |
 | 2   | Upgradeable ROM | Power-on settings   |
 | 3   | RAM | Real-time settings   |
-| 4   | Upgradeable ROM | Used for categories 14 & 15 only   |
+| 4   | Upgradeable ROM | Categories 14 & 15 only   |

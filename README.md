@@ -147,9 +147,53 @@ The types of wavetable supported are:
 | 4                 | Piano     |
 | 2                 | Drum      |
   
-## Melody
+## Melody Wavetable
+
+In the CTX3000, there are 900 built-in Melody Wavetable parameter sets. Of those:
+
+* 161 are empty. That is, all references to Instruments are to Instrument #0. Those
+  wavetables will not produce sound.
+* 569 are referenced by one or more built-in tones.
+* That leaves 170 that are non-empty but not referenced by any built-in tones.
+  Those 170 fall into three main groupings:
+  o Some are ethnic sounds that are probably intended for regional variants of
+    the keyboards.
+  o Some are very similar to or inferior to the used sounds. Most likely Casio
+    produced these to be tones but eventually decided to not release them to the
+    users.
+  o A small number are high-quality and different to existing tones. That makes
+    them useful musically. To explore 20 of these, try out the
+    [New Sounds](https://www.casiomusicforums.com/index.php?/files/file/1455-new-sounds/)
+    download.
+
+## Versatile
 
 ...
+
+
+## Experimental Facilities
+
+The CTX keyboards have very limited facilities for consumers to experiment with
+the synthesis. The following are available in user memory:
+
+* 50 user tones. These can be loaded through USB, the first-party DataManager
+  application, or through SysEx over USB-MIDI.
+* 1 Melody Wavetable. It can only be loaded through SysEx over USB-MIDI. When
+  referencing from a Tone it has number #900.
+* 1 Versatile Wavetable. It can only be loaded through SysEx over USB-MIDI. When
+  referencing from a Tone it has number #30.
+* 1 Piano Wavetable. It can only be loaded through SysEx over USB-MIDI. When
+  referencing from a Tone it has number #27.
+* 1 Drum Wavetable. It can only be loaded through SysEx over USB-MIDI. When
+  referencing from a Tone it has number #39.
+* 2 Melodic Instruments. They can only be loaded through SysEx over USB-MIDI. When
+  referencing from a Wavetable they have numbers #1500 & #1501.
+* 1 Drum Instrument. It can only be loaded through SysEx over USB-MIDI. When
+  referencing from a Wavetable it has number #1300.
+* 1 Wave Information & Wave Pointer. They can only be loaded through SysEx over USB-MIDI. When
+  referencing from an Instrument they have number #220.
+
+There is no way to load wave sample data into user memory.
 
 ## Appendix A - Explanation of memory types
 
